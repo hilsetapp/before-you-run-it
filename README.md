@@ -1,39 +1,41 @@
-[English](README.en.md) | **Русский**
+**English** | [Русский](README.ru.md)
 
-# Перед запуском
+# Before You Run It
 
-Локальная проверка текста установочных скриптов и команд. Вставьте код или загрузите файл, чтобы увидеть действия, которые стоит проверить перед запуском.
+A local text check for installer scripts and commands. Paste code or load a file to see actions worth reviewing before you run it.
 
-## Открыть приложение
+## Open the app
 
-[Запустить Перед запуском в браузере](https://hilsetapp.github.io/pered-zapuskom/)
+[Launch Before You Run It](https://hilsetapp.github.io/pered-zapuskom/)
 
-## Поддерживаемые файлы
+The interface opens in English. Use **EN / RU** in the header to switch languages.
 
-PowerShell (`.ps1`, `.psm1`), Bash и sh (`.sh`, `.bash`, `.zsh`, `.command`), командные файлы Windows (`.bat`, `.cmd`) и `package.json`.
+## Supported files
 
-## Как пользоваться
+PowerShell (`.ps1`, `.psm1`), Bash and sh (`.sh`, `.bash`, `.zsh`, `.command`), Windows batch files (`.bat`, `.cmd`), and `package.json`.
 
-1. Вставьте команду, выберите файл или перетащите его на страницу.
-2. Нажмите «Разобрать скрипт».
-3. Просмотрите отмеченные строки и проверьте их в контексте файла.
+## How to use it
 
-Можно загрузить текстовый файл размером до 1 МБ. Отчёт копируется в буфер обмена.
+1. Paste a command, choose a file, or drop one onto the page.
+2. Select **Review script**.
+3. Check each flagged line in the context of the original file.
 
-## Что проверяется
+Text files up to 1 MB can be loaded. The report can be copied to the clipboard.
 
-Правила отмечают загрузку и запуск кода, скрытое содержимое, повышенные права, автозапуск, службы, широкие команды удаления, возможные хранилища секретов, настройки защиты системы, внешние адреса и сценарии установки npm-пакетов.
+## What it checks
 
-## Приватность и ограничения
+Rules flag downloads and code execution, encoded content, elevated permissions, startup entries, services, broad deletion commands, possible secret stores, security-setting changes, external URLs, and npm install scripts.
 
-Разбор выполняется в браузере. Код не отправляется на сервер и не исполняется. Проверка ищет текстовые совпадения, а не анализирует программу целиком. Она может пропустить динамически собранные команды и код, загружаемый позже. Совпадение не означает вредоносность, а отсутствие совпадений не доказывает безопасность. Бинарные `.exe` и `.msi` не проверяются.
+## Privacy and limits
 
-Не запускайте незнакомый файл только потому, что отчёт не нашёл совпадений.
+Analysis runs in your browser. Code is not uploaded or executed. The checker looks for text patterns, not the program's full behavior. It can miss dynamically assembled commands and code downloaded later. A match does not prove malicious intent, and no matches do not prove a script is safe. Binary files such as `.exe` and `.msi` are not checked.
 
-## Запуск локально
+Do not run an unfamiliar file just because the report found no matches.
 
-Откройте `index.html` в браузере. Установка зависимостей и сборка не нужны.
+## Run locally
 
-## Лицензия
+Open `index.html` in a browser. No dependencies or build step are required.
 
-MIT. См. [`LICENSE`](LICENSE).
+## License
+
+MIT. See [`LICENSE`](LICENSE).
