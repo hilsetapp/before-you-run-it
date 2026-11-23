@@ -214,7 +214,7 @@ function applyMetadata(language) {
     : "Review installer scripts before running them. Local browser checks for PowerShell, Bash, sh, Windows batch files, and package.json, with matching lines shown.";
   const siteName = ru ? "Перед запуском" : "Before You Run It";
   const ogTitle = ru ? "Перед запуском: проверка установочных скриптов" : "Before You Run It: installer script checker";
-  const image = `https://hilsetapp.github.io/pered-zapuskom/assets/og-card-${language}.png`;
+  const image = `https://hilsetapp.github.io/before-you-run-it/assets/og-card-${language}.png`;
   document.title = title;
   document.querySelector('meta[name="description"]').content = description;
   document.querySelector('meta[name="application-name"]').content = siteName;
@@ -232,7 +232,7 @@ function applyMetadata(language) {
     "@context": "https://schema.org",
     "@type": "WebApplication",
     name: siteName,
-    url: "https://hilsetapp.github.io/pered-zapuskom/",
+    url: "https://hilsetapp.github.io/before-you-run-it/",
     description,
     applicationCategory: "SecurityApplication",
     operatingSystem: "Any",
@@ -263,7 +263,7 @@ function applyLanguage(language, save = true) {
   applyMetadata(currentLanguage);
   updateCount();
   if (save) {
-    try { localStorage.setItem("pered-zapuskom-language", currentLanguage); } catch (_) {}
+    try { localStorage.setItem("before-you-run-it-language", currentLanguage); } catch (_) {}
   }
   if (currentAnalysis) renderResults(currentAnalysis);
 }
@@ -473,7 +473,7 @@ window.addEventListener("drop", async (event) => {
 
 let initialLanguage = "en";
 try {
-  const savedLanguage = localStorage.getItem("pered-zapuskom-language");
+  const savedLanguage = localStorage.getItem("before-you-run-it-language");
   if (savedLanguage === "ru" || savedLanguage === "en") initialLanguage = savedLanguage;
 } catch (_) {}
 applyLanguage(initialLanguage, false);

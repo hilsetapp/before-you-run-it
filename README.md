@@ -6,7 +6,7 @@ A local text check for installer scripts and commands. Paste code or load a file
 
 ## Open the app
 
-[Launch Before You Run It](https://hilsetapp.github.io/pered-zapuskom/)
+[Launch Before You Run It](https://hilsetapp.github.io/before-you-run-it/)
 
 The interface opens in English. Use **EN / RU** in the header to switch languages.
 
